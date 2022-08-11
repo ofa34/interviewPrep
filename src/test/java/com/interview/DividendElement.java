@@ -10,9 +10,7 @@ public class DividendElement {
 
         int[] array = {5,4,9,0,7,10,3,2};
 
-
         System.out.println(countOfDividendElement(array));
-
 
     }
 
@@ -23,16 +21,13 @@ public class DividendElement {
 
         for (int i = 0; i < array.length; i++) {
             sum+=array[i];
-
         }
         for (int i = 0; i < array.length; i++) {
-
 
             if (array[i]!=0 && (sum-array[i])%array[i]== 0 ){
                 count++;
             }
         }
-
         return count;
     }
 

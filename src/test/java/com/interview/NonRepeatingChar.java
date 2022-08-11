@@ -11,14 +11,10 @@ public class NonRepeatingChar {
         // can that string be null or not ?
         //
 
-
         String sampleString = "aaabhccdeeef";
         String sampleString2 = "abcbad";
         String sampleString3 = "abcabcabc";
         String sampleString4 = "";
-
-
-
 
         System.out.println("nonRepeating char is = " + nonRepeatingCharacter(sampleString));
         System.out.println("nonRepeating char is = " + nonRepeatingCharacter(sampleString2));
@@ -28,27 +24,25 @@ public class NonRepeatingChar {
 
     public static List<Character> nonRepeatingCharacter(String sampleString) {
 
-        Map<Character,Integer> map = new LinkedHashMap<>();
+        Map<Character, Integer> map = new LinkedHashMap<>();
         ArrayList<Character> arrayList = new ArrayList<>();
 
         for (int i = 0; i < sampleString.length(); i++) {
 
-            char ch  = sampleString.charAt(i);
-            map.put(ch,map.getOrDefault(ch,0)+1);
-
-
+            char ch = sampleString.charAt(i);
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
 
         }
-        for (Character each :
-                map.keySet()) {
+        for (Character each : map.keySet()) {
 
-            if (map.get(each)==1) {
+            if (map.get(each) == 1) {
                 arrayList.add(each);
-
             }
-        }return arrayList.size()==0?new ArrayList<>(Arrays.asList('-')):arrayList;
 
-    }
+        }
+        if (arrayList.size() == 0) return new ArrayList<>(Arrays.asList('-'));
+        else return arrayList;//return arrayList.size()==0?new ArrayList<>(Arrays.asList('-')):arrayList;
+
 
 //        ArrayList<Character> arrayList = new ArrayList<>();
 //
@@ -66,6 +60,5 @@ public class NonRepeatingChar {
 //
 //        return ('-');
 //   }
-
-
+    }
 }

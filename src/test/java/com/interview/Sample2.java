@@ -1,11 +1,25 @@
 package com.interview;
 
-import java.util.List;
+
 
 public class Sample2 {
-    public static void main(String[] args) {
+
+    private static String aa = "123465";
+
+    public  void setAa(String aa) {
+        aa = aa;
+    }
 
 
-
+    public  String getAa() {
+        return aa;
     }
 }
+
+
+ class Test{
+     public static void main(String[] args) {
+        Sample2 sample2 =new Sample2();
+
+     }
+ }

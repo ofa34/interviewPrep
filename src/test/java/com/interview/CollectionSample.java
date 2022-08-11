@@ -15,8 +15,10 @@ public class CollectionSample {
         numbers.addAll(Arrays.asList(100,200,50,150,10,20,30,40,50,60,70));
 
         Collections.sort(numbers);
-        System.out.println(numbers);
 
+        System.out.println(numbers);
+        Collections.reverse(numbers);
+        System.out.println(numbers);
         System.out.println("--------------------------------------");
 
         Integer maxNumber = Collections.max(numbers);

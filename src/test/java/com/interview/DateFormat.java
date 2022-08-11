@@ -20,7 +20,7 @@ public class DateFormat {
 
     public static String dateFormat(int time) {
 
-        String[] suffix ={"th","st","nd","rd","th","th","th","th","th","th"};
+        String[] suffix ={"th","st","nd","rd","th","th","th","th","th"};
         String[] months ={"","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"};
 
         String date = time +"";

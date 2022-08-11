@@ -7,12 +7,12 @@ public class MaxProfit {
 
     public static void main(String[] args) {
 
-        // number days can be changeable or fixed
+        // number of days can be changeable or fixed
         // if i can achieve same profit with different days, i can take one of them right ?
         // if a profit is not possible should i return minimum loss ?
 
 
-        int [] array = {7,0,4,3,6,0,4};
+        int [] array = {7,1,4,3,6,0,4};
 
         System.out.println(maxprofit(array));
 
