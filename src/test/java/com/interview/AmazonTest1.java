@@ -15,12 +15,13 @@ public class AmazonTest1 {
     @Test
     public void Search1(){
 
+
+
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://www.amazon.com/");
-
         WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
         searchBox.sendKeys("apple");
 
@@ -29,6 +30,13 @@ public class AmazonTest1 {
 
 
 
+    }
+    @Test
+    public void search2(){
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.ebay.com/");
     }
 
 

@@ -1,6 +1,7 @@
 package com.interview;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class SecondMostFrequent {
@@ -16,10 +17,13 @@ public class SecondMostFrequent {
     public static Character SecondFrequentChar(String s) {
         Map<Character,Integer> map = new HashMap<>();
 
+        s= s.toLowerCase();
         int mostFrequent=0,secondMostFrequent =0;
         Map.Entry<Character,Integer> first = null;
         Map.Entry<Character,Integer> second = null;
+
         for (int i = 0; i < s.length(); i++) {
+
 
             map.put(s.charAt(i),map.getOrDefault(s.charAt(i),0)+1);
 
@@ -31,7 +35,7 @@ public class SecondMostFrequent {
                 first = each;
                 mostFrequent=(int)each.getValue();
 
-            }else if ((int)each.getValue()>secondMostFrequent &&(int)each.getValue()!= mostFrequent ){
+            }else if ((int)each.getValue()>secondMostFrequent && (int)each.getValue()!= mostFrequent ){
                 second=each;
             }
         }

@@ -17,7 +17,7 @@ public class Sample2 {
 }
 
 
- class Test{
+ class Test1 {
      public static void main(String[] args) {
         Sample2 sample2 =new Sample2();
 

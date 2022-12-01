@@ -10,6 +10,20 @@ public class CollectionSample {
 
     public static void main(String[] args) {
 
+        ArrayList<Integer> list2 = new ArrayList<>();
+        list2.addAll(Arrays.asList(10,22,33,44,55,66,77,11));
+        Collections.sort(list2);
+        System.out.println(list2);
+
+        Collections.reverse(list2);
+        System.out.println("list2 = " + list2);
+
+        Integer maxNumberOfList2 = Collections.max(list2);
+        System.out.println("maxNumberOfList2 = " + maxNumberOfList2);
+        Integer minNumberOfList2 = Collections.min(list2);
+        System.out.println("minNumberOfList2 = " + minNumberOfList2);
+        System.out.println("------------------------------");
+
         ArrayList<Integer> numbers = new ArrayList<>();
 
         numbers.addAll(Arrays.asList(100,200,50,150,10,20,30,40,50,60,70));

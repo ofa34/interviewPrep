@@ -112,16 +112,16 @@ public class ArraylistSample {
         int[] arr1 = {10,20,30,40};
         int[] arr2 = {30,40,50,60};
         int lengthOfArrays=arr1.length+arr2.length;
-        int[] newArray = new int[arr1.length+arr2.length];
+        int[] newArray = new int[lengthOfArrays];
         for (int i = 0 ;i<newArray.length;i++){
-            if (i<arr1.length) {
+            if (i<arr1.length){
                 newArray[i] = arr1[i];
-            }else
-                newArray[i] = arr2[i-arr2.length];
+            }else {
+                newArray[i]=arr2[i-arr2.length];
+            }
         }
         Arrays.sort(newArray);
         System.out.println(Arrays.toString(newArray));
-
         System.out.println("--------------------------------------------");
 
 
